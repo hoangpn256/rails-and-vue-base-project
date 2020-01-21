@@ -1,0 +1,39 @@
+require: rubocop-rails
+AllCops:
+  Exclude:
+    - .git/**/*
+    - bin/**/*
+    - db/schema.rb
+    - node_modules/**/*
+    - vendor/**/*
+    - test/**/*
+Metrics/AbcSize:
+  Max: 18
+  Exclude:
+    - db/migrate/**/*
+Metrics/BlockLength:
+  Exclude:
+    - db/migrate/**/*
+    - spec/**/*
+    - config/routes.rb
+    - config/deploy.rb
+    - config/environments/**/*
+    - config/initializers/devise.rb
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - db/migrate/**/*
+Layout/LineLength:
+  Max: 120
+Metrics/ClassLength:
+  Max: 200
+Metrics/CyclomaticComplexity:
+  Max: 8
+Rails:
+  Enabled: true
+Style/AsciiComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
